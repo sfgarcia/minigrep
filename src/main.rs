@@ -1,6 +1,5 @@
+use minigrep::{run, Config};
 use std::env;
-use minigrep::{Config, run};
-
 
 fn main() {
     let config = Config::build(&mut env::args()).unwrap_or_else(|err| {
